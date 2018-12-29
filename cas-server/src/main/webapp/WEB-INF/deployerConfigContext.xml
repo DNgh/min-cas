@@ -29,6 +29,7 @@
     <bean id="attributeRepository" class="org.jasig.services.persondir.support.NamedStubPersonAttributeDao"
           p:backingMap-ref="attrRepoBackingMap" />
 
+	<!-- 默认通过配置文件认证用户和密码，屏蔽，改用数据库方式 -->
     <!--<alias name="acceptUsersAuthenticationHandler" alias="primaryAuthenticationHandler" />-->
     <alias name="personDirectoryPrincipalResolver" alias="primaryPrincipalResolver" />
 

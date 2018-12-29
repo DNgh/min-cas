@@ -21,10 +21,10 @@
   <dependencyManagement>
   	<dependencies>
   		<dependency>
-		<groupId>org.jasig.cas.client</groupId>
-		<artifactId>cas-client-core</artifactId>
-		<version>${cas.version}</version>
-	</dependency>
+			<groupId>org.jasig.cas.client</groupId>
+			<artifactId>cas-client-core</artifactId>
+			<version>${cas.version}</version>
+		</dependency>
   	</dependencies>
   </dependencyManagement>
 </project>
