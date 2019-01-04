@@ -4,7 +4,7 @@
       xsi:schemaLocation="http://www.springframework.org/schema/webflow
                           http://www.springframework.org/schema/webflow/spring-webflow.xsd">
 
-    <var name="credential" class="org.jasig.cas.authentication.UsernamePasswordCredential"/>
+    <var name="credential" class="com.min.entity.MinUserCredential"/>
 
     <!--
     <var name="credential" class="org.jasig.cas.authentication.RememberMeUsernamePasswordCredential" />
@@ -54,7 +54,7 @@
     </decision-state>
 
     <action-state id="initializeLogin">
-        <evaluate expression="'success'"/>
+        <evaluate expression="initLoginParamAction"/>
         <transition on="success" to="viewLoginForm"/>
     </action-state>
 

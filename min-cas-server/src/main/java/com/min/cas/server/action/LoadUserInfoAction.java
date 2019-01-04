@@ -5,6 +5,7 @@ import org.jasig.cas.ticket.InvalidTicketException;
 import org.jasig.cas.ticket.TicketGrantingTicket;
 import org.jasig.cas.ticket.registry.TicketRegistry;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.webflow.action.AbstractAction;
 import org.springframework.webflow.execution.Event;
 import org.springframework.webflow.execution.RequestContext;
@@ -14,12 +15,13 @@ import com.min.facility.GlobalContextHolder;
 import com.min.service.UserService;
 import com.min.view.UserInfo;
 
+
 public class LoadUserInfoAction extends AbstractAction {
 
-	@Autowired
+//	@Autowired
 	UserService userService;
 	
-	@Autowired
+//	@Autowired
 	private TicketRegistry ticketRegistry;
 	
 	@Override
@@ -50,7 +52,7 @@ public class LoadUserInfoAction extends AbstractAction {
         	GlobalContextHolder.setUserInfo(userInfo);
 		}
 		
-		UserInfo userInfo = userService.loadUserInfoByUsername(GlobalContextHolder.getUserInfo().getUsername());
+		UserInfo userInfo = userService.loadUserByUsername(GlobalContextHolder.getUserInfo().getUsername());
 		context.getFlowScope().asMap().put("userInfo", userInfo);
 		
 		return result("success");

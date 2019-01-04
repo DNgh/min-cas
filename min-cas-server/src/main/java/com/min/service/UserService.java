@@ -5,5 +5,5 @@ import com.min.view.UserInfo;
 
 public interface UserService {
 	public TsUser findUserByUsername(String username);
-	public UserInfo loadUserInfoByUsername(String username);
+	public UserInfo loadUserByUsername(String username);
 }

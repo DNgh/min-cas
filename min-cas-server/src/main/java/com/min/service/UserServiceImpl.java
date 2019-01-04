@@ -18,7 +18,7 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public UserInfo loadUserInfoByUsername(String username) {
+	public UserInfo loadUserByUsername(String username) {
 		TsUser user = userDao.findByUsername(username);
 		UserInfo userInfo = new UserInfo();
 		if(user != null) {
