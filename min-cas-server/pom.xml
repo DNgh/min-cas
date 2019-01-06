@@ -337,7 +337,7 @@
   </dependencies>
 
   <build>
-    <finalName>cas-server</finalName>
+    <finalName>min-cas-server</finalName>
     <plugins>
       <plugin>
 	      <groupId>org.apache.maven.plugins</groupId>

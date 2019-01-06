@@ -36,7 +36,7 @@
   </dependencies>
 
   <build>
-    <finalName>cas-client</finalName>
+    <finalName>min-cas-client</finalName>
     <plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

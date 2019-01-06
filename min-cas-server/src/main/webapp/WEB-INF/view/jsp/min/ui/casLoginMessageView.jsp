@@ -19,7 +19,4 @@
  <a class="button" href="${url}">Continue</a>
 </div>
 
-<div class="success">
-	<p><spring:message code="screen.success.loginParam" arguments="${minUrl}"/></p>
-</div>
 <jsp:directive.include file="includes/bottom.jsp" />
