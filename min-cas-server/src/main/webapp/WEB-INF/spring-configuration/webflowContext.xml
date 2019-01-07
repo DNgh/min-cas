@@ -56,7 +56,7 @@
           p:order="0">
         <property name="basenames">
             <util:list>
-                <value>cas_views</value>
+                <value>min_views</value>
             </util:list>
         </property>
     </bean>

@@ -11,7 +11,7 @@
 
 /*http://i.imgur.com/GHr12sH.jpg*/
 .blur-bg {
-  background: url(../img/blur.jpg) no-repeat center center fixed;
+  background: url(../images/blur.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
