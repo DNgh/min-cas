@@ -42,6 +42,7 @@
 	<!-- mysql驱动版本号 -->
 	<mysql-driver.version>5.1.34</mysql-driver.version>
 	<dbcp.version>2.1.1</dbcp.version>
+	<jsp.version>2.2.1</jsp.version>
 	<jstl.version>1.2</jstl.version>
 	<jackjson.version>2.8.9</jackjson.version>
 	<!-- tomcat跨域 -->
@@ -237,7 +238,12 @@
 	<dependency>
 	    <groupId>javax.servlet</groupId>
 	    <artifactId>javax.servlet-api</artifactId>
-	    <version>${servlet.version}</version>
+	    <scope>provided</scope>
+	</dependency>
+	
+	<dependency>
+	    <groupId>javax.servlet.jsp</groupId>
+	    <artifactId>javax.servlet.jsp-api</artifactId>
 	    <scope>provided</scope>
 	</dependency>
 	
